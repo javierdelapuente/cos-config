@@ -19,11 +19,11 @@
     ]
   },
   "description": "Overview of LXD instances",
-  "editable": false,
+  "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 19131,
   "graphTooltip": 0,
-  "id": 19,
+  "id": 20,
   "links": [
     {
       "icon": "external link",
@@ -1716,8 +1716,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -1850,8 +1849,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -1981,8 +1979,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -2111,8 +2108,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -2244,8 +2240,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               }
             ]
           },
@@ -3736,7 +3731,7 @@
             "uid": "PCC22F3DF18347E11"
           },
           "editorMode": "code",
-          "expr": "{app=\"lxd\", type=\"lifecycle\", instance=\"$job\", project=~\"|$project\"}",
+          "expr": "{app=\"lxd\", type=\"lifecycle\", project=~\"|$project\"}",
           "queryType": "range",
           "refId": "A"
         }
@@ -3773,7 +3768,7 @@
             "uid": "PCC22F3DF18347E11"
           },
           "editorMode": "code",
-          "expr": "{app=\"lxd\", type=\"logging\", instance=\"$job\", project=~\"|$project\"}",
+          "expr": "{app=\"lxd\", type=\"logging\", project=~\"|$project\"}",
           "queryType": "range",
           "refId": "A"
         }
@@ -3790,7 +3785,7 @@
     "list": [
       {
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "lxd",
           "value": "lxd"
         },
@@ -3820,7 +3815,7 @@
       },
       {
         "current": {
-          "selected": true,
+          "selected": false,
           "text": "default",
           "value": "default"
         },
@@ -3852,9 +3847,13 @@
       {
         "allValue": "",
         "current": {
-          "selected": false,
-          "text": "All",
-          "value": "$__all"
+          "selected": true,
+          "text": [
+            "All"
+          ],
+          "value": [
+            "$__all"
+          ]
         },
         "datasource": {
           "type": "prometheus",
@@ -3883,7 +3882,7 @@
       },
       {
         "current": {
-          "selected": false,
+          "selected": true,
           "text": "5",
           "value": "5"
         },
@@ -3948,8 +3947,8 @@
     ]
   },
   "timezone": "",
-  "title": "LXD",
-  "uid": "bGY-LSB7k",
+  "title": "LXD Copy",
+  "uid": "a5b7b83f-b4eb-43df-ae21-7ca3518b38fe",
   "version": 1,
   "weekStart": ""
 }
